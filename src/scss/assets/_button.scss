@@ -1,0 +1,43 @@
+.investin-button-wrapper {
+    .btn-secondary:hover,
+    .btn-secondary:focus {
+        background-color: $investin-primary-button !important;
+    }
+}
+
+.investin-primary-button {
+    border-radius: 30px;
+    background-color: $investin-primary-button;
+    border: none;
+    color: #fff;
+    text-align: center;
+    font-size: 0.875rem;
+    font-weight: 600;
+    padding: 11px 20px;
+    width: 100px;
+    transition: all 0.5s;
+    // box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+    width: 150px;
+    &:after {
+        content: "»";
+        position: absolute;
+        opacity: 0;
+        top: 11px;
+        right: -20px;
+        transition: 0.5s;
+    }
+
+    &:hover {
+        padding-right: 22px;
+        padding-left: 8px;
+    }
+
+    &:hover:after {
+        opacity: 1;
+        right: 10px;
+    }
+}
